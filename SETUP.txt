@@ -1,0 +1,33 @@
+VOICE OF SERVICE — GITHUB PAGES PACKAGE
+
+IMPORTANT:
+GitHub Pages can host the website, but employee submissions need Supabase for central storage.
+
+UPLOAD TO GITHUB:
+1. Extract this ZIP on your Android phone.
+2. In your GitHub repository, upload ALL files in this folder.
+3. Make sure index.html is in the repository ROOT.
+4. In GitHub: Settings → Pages → Deploy from a branch → main → / (root) → Save.
+
+BEFORE SHARING WITH EMPLOYEES:
+1. Create a Supabase project.
+2. Open Supabase SQL Editor and run supabase_schema.sql.
+3. Create your admin account in Supabase Authentication.
+4. Open config.js and replace:
+   PASTE_YOUR_SUPABASE_PROJECT_URL
+   PASTE_YOUR_SUPABASE_ANON_KEY
+5. Commit the edited config.js to GitHub.
+6. Open your GitHub Pages URL and test one employee submission.
+7. Open /admin.html and sign in with the Supabase admin account.
+
+SECURITY:
+- Do NOT put the Supabase service_role/secret key in this website.
+- Use only the public anon/publishable key in config.js.
+- Keep employee/customer confidential information out of submissions.
+- For an internal portal, disable public user sign-ups in Supabase Authentication and create admin accounts yourself.
+
+EMPLOYEE PAGE:
+Your GitHub Pages home URL.
+
+ADMIN PAGE:
+Your GitHub Pages URL + /admin.html
